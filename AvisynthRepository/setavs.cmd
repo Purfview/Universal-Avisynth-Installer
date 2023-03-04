@@ -94,10 +94,10 @@ echo.
 
 echo    5 = Avisynth+     0.1.0 (x86, r2772)
 echo    6 = Avisynth+     0.1.0 (x64, r2772)
-echo    7 = Avisynth+ XP  3.7.0 (x86, r3382)
-echo    8 = Avisynth+ XP  3.7.0 (x64, r3382)
-echo    9 = Avisynth+     3.7.0 (x86, r3382)
-echo   10 = Avisynth+     3.7.0 (x64, r3382)
+echo    7 = Avisynth+ XP  3.7.2 (x86, r3661)
+echo    8 = Avisynth+ XP  3.7.2 (x64, r3661)
+echo    9 = Avisynth+     3.7.2 (x86, r3661)
+echo   10 = Avisynth+     3.7.2 (x64, r3661)
 
 echo.
 echo   13 = Uninstall Avisynth x86
@@ -118,10 +118,10 @@ if %no%==4 set avs=AVS260_MT
 
 if %no%==5  (set avs=AVSPLUS010_x86) & set avspl=true
 if %no%==6  (set avs=AVSPLUS010_x64) & set avspl=true
-if %no%==7  (set avs=AVSPLUS370_x86_XP) & set avspl=true
-if %no%==8  (set avs=AVSPLUS370_x64_XP) & set avspl=true
-if %no%==9  (set avs=AVSPLUS370_x86) & set avspl=true
-if %no%==10 (set avs=AVSPLUS370_x64) & set avspl=true
+if %no%==7  (set avs=AVSPLUS372_x86_XP) & set avspl=true
+if %no%==8  (set avs=AVSPLUS372_x64_XP) & set avspl=true
+if %no%==9  (set avs=AVSPLUS372_x86) & set avspl=true
+if %no%==10 (set avs=AVSPLUS372_x64) & set avspl=true
 
 
 if %no%==13 (set avs=AVSx86) & goto :uninstall
@@ -131,9 +131,9 @@ if [%avs%]==[] (echo Invalid input...
 	goto :menu)
 
 if %avs%==AVSPLUS010_x64 set x64=true
-if %avs%==AVSPLUS370_x64 set x64=true
-if %avs%==AVSPLUS370_x64_XP set x64=true
-if %avs%==AVSPLUS370_x64 set x64=true
+if %avs%==AVSPLUS372_x64 set x64=true
+if %avs%==AVSPLUS372_x64_XP set x64=true
+if %avs%==AVSPLUS372_x64 set x64=true
 
 :install
 
